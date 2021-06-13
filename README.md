@@ -1,6 +1,6 @@
 # MERN-Stack-Firebase-Starter-Kit
 
-A template I've put together to help get up and running with MERN stack on Google Firebase <sub>^1</sub>. React.JS runs on Firebase Hosting while the server-side Node.JS, Express.JS, MongoDB run in Firebase Functions.
+A template I've put together to help get up and running with MERN stack on Google Firebase [1]. React.JS runs on Firebase Hosting while the server-side Node.JS, Express.JS, MongoDB run in Firebase Functions.
 
 ## Getting Started
 
@@ -114,4 +114,4 @@ export default App;
     https://<project-name>.firebaseapp.com
 
 ------------
-<sub>^1</sub> Google Firebase Documentation: https://firebase.google.com/docs?hl=en
+[1] Google Firebase Documentation: https://firebase.google.com/docs?hl=en
