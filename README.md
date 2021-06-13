@@ -67,7 +67,6 @@ exports.app = functions.https.onRequest(app);
 ### Adding components to React App
 With React now running, we can start building our frontend
 
-<!-- Add Bootstrap -->
 Create basic component in /src/components
 ```javascript
 import React, { Component } from "react";
