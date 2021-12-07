@@ -20,6 +20,8 @@ Start Localhost emulators in ./functions
 ```
 > npm i --save create-react-app
 > sudo create-react-app <app-name>
+or
+> npx create-react-app my-app
 ```
 
 ### Initialising Firebase
