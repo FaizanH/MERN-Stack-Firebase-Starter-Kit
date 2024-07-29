@@ -2,14 +2,14 @@ const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const ATLAS_URI = "";
+const exampleRouter = require("./routes/example");
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(ATLAS_URI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, dbName: 'MyDB' });
 
 const connection = mongoose.connection;
 
@@ -17,10 +17,6 @@ connection.once("open", () => {
   console.log("MongoDB connection established successfully");
 });
 
-// Add Routes here
-/*
-const exampleRouter = require("./routes/example");
-app.use("/example", exampleRouter);
-*/
+app.use("/api", exampleRouter)
 
 exports.app = functions.https.onRequest(app);
